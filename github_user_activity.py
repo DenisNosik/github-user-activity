@@ -27,6 +27,7 @@ def get_github_user_activity(username):
                     case "WatchEvent":
                         print(f"{username} starred: {event['repo']['name']}")
 
+            # counts how many identical commits there were
             for repo, total in push_summary.items():
                 if repo != 0:
                     print(f"{username} pushed {total} commit(s) to: {repo}")
